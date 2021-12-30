@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본 설정 */
+html {
+    font-family: 'KyoboHandwriting2020A';
+    font-size: 10px;
+}
+
+body {
+    background: #F1EDFF;
+    font-size: 18px;
+}
+
+.question {
+    display: none;
+}
+
+.result {
+    display: none;
+}
+
+/* 모듈 */
+.btn {
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    outline: none;
+    padding: 1.2rem 4rem;
+    quotes: auto;
+    text-align: center;
+    transition: all .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-color: #ABA9BB;
+    box-shadow: #444471 0 -6px 8px inset;
+    transform: scale(1.125);
+    color: #FFFFFF;
+}
+
+.btn:active {
+    transform: scale(1.025);
+}
+
+/* 헤더 */
+header {
+    background: #54548ce6;
+    font-size: 4rem;
+    padding: 22px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #F1EDFF;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 2px 6px 2px rgb(0, 0, 0);
+}
+
+/* 시작화면 */
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 28%;
+    font-size: 2.4rem;
+}
+
+.start h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.start img {
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 30px;
+    min-width: 400px;
+}
+
+.start button {
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+}
+
+/* 문제 */
+.question {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.progress {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    background: #373754;
+    border-radius: 10px;
+}
+
+.question #title {
+    padding: 30px 0;
+    font-size: 2.4rem;
+}
+
+.cont-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question #btnA {
+    margin-bottom: 30px;
+}
+
+/* 결과 */
+.result {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.result #cat {
+    font-size: 3.2rem;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.result #img {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    width: 500px;
+    height: 430px;
+}
+
+.result #explain {
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    text-align: left;
+}
+
+.result strong {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin: 40px 0 70px;
+    font-weight: bold;
+}
+
+.result .link-retry {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.result .btn-retry {
+    font-size: 2.3rem;
+}
+
+/* 미디어쿼리 */
+/* 360px 이상일 때 */
+@media screen and (min-width: 360px) and (max-width: 754px) {
+
+    /* 모듈 */
+    .btn {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 1.2rem 2rem;
+        display: inline-block;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        background-color: #FFFFFF;
+        border-radius: 40em;
+        /* border-style: none; */
+        box-shadow: #ADCFFF 0 -12px 6px inset;
+        box-sizing: border-box;
+        color: #000000;
+        transform: scale(1);
+    }
+
+    /* 헤더 */
+    header {
+        font-size: 2.6rem;
+        padding: 22px 10px;
+        box-sizing: border-box;
+    }
+
+    /* 시작화면 */
+    .start {
+        margin: 0 5%;
+    }
+
+    .start h2 {
+        font-size: 2rem;
+    }
+
+    .start .tit-img {
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .start .btn {
+        margin-top: 20px;
+        font-size: 1.8rem;
+        padding: 1.2rem 4rem;
+    }
+
+    /* 문제 */
+    .question #title {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    /* 결과 */
+    .result {
+        padding: 0 20px;
+    }
+
+    .result #cat {
+        font-size: 2.4rem;
+    }
+
+    .result #img {
+        width: 80%;
+        height: 100%;
+    }
+
+    .result #explain {
+        font-size: 1.6rem;
+    }
+
+    .result strong {
+        font-size: 2rem;
+    }
+
+    .result .btn-retry {
+        font-size: 2.3rem;
+        padding: 1.2rem 4rem;
+    }
+
+}
+
+/* 755px 이상일 때 */
+@media screen and (min-width: 755px) {
+    .question {
+        padding: 0 20%;
+        box-sizing: border-box;
+    }
+
+    .result {
+        padding: 0 15%;
+        box-sizing: border-box;
+    }
+}
